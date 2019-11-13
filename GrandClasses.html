@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Grand Classes</title>
+   </head>
+
+	<style>
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  border-style: double solid ridge;
+		  background-color: #FFB242;
+		  position: fixed;
+		  top: 0;
+		  width: 100%;
+		}
+
+		li {
+		  float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+		  background-color: #111;
+		}
+
+		.active {
+		  background-color: #4CAF50;
+		}
+
+		/* The Link */
+
+		.GCLink:link, .GCLink:visited {
+		  background-color: #FF7B7B;
+		  color: white;
+		  padding: 14px 25px;
+		  border-bottom: 0px solid white;
+		  text-align: center;
+		  text-decoration: dotted;
+		  display: inline-block;
+		}
+
+		.GCLink {
+		  width: 125px;
+		  height: 64px;
+		  background-color: #FF7B7B
+		  -webkit-transition: width 2s; /* Safari prior 6.1 */
+		  transition: width 2s;
+		}
+		.GCLink:hover {
+			width: 135px;
+			background-color: #FF9999;
+			-webkit-transition: background-color 100ms linear, width 100ms linear;
+			-ms-transition: background-color 100ms linear, width 100ms linear;
+			transition: background-color 100ms linear, width 100ms linear;
+		}
+		.GCLink:hover:not{
+			width: 125px;
+			background-color: #FF7B7B;
+			-webkit-transition: background-color 100ms linear, width 50ms linear;
+			-ms-transition: background-color 100ms linear, width 50ms linear;
+			transition: background-color 100ms linear, width 50ms linear;
+		}
+
+		.GCLink:active {
+		  background-color: #FFC1C1;
+		}
+	</style>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#server">Discord</a></li>
+</ul>
+
+	<h3>
+		<div class="GCTopText">
+			<font color="white"> Info
+		</h3>
+
+		<body style="background-image:url('GC_BG.png');">
+   <body>
+
+	<div id="home"></div>
+	   <br> </br>
+			<br>
+				<center>
+					<img src="GC_Img.png" alt="Grand Classes" width="256"
+					height="256">
+				</center>
+			</br>
+
+			<h2>
+				<center>
+					<p style = "font-family:georgia,garamond,serif;font-size:26px;font-style:normal;">
+						<font color="red"> <a href="https://static.allfearthesentinel.net/wads/grandclasses-v1a.pk3"target="_blank" class="GCLink"> Download Now! </a>
+							</font>
+				</center>
+			</h2>
+
+			<br> </br> <br> </br> <br> </br> <br> </br> <br> </br>
+
+			<div id="about"></div>
+			<hr>
+				<h1> About </h1>
+			<hr>
+				<h2> ========== Basics </h2>
+				<h3> ===== Grand Classes is a MM8BDM Class mod that plans to implement concepts from other users that are possible within Zandronum. </h3>
+				<h3> ======= You can submit your concepts in the Discord server, linked below. </h3>
+
+			<br> </br> <br> </br>
+			
+			<div id="Server"></div>
+			<hr>
+				<h1> Discord Server </h1>
+			<hr>
+
+				<center>
+					<p style = "font-family:courier,garamond,serif;font-size:26px;font-style:normal;">
+						<font color="red"> <a href="https://discord.gg/B2MvQkH"target="_blank" class="GCLink"> Discord Link </a>
+							</font>
+				</center>
+
+		<br> </br> <br> </br> <br> </br> <br> </br>
+			<div id="disclaimer"></div>
+			<h3>
+				<font color="white">
+					GRAND CLASSES IS NOT AFFLICTED WITH CAPCOM.
+					<br> </br>
+					Grand Classes © 2019
+				</h3>
+		</body>
+</html>
