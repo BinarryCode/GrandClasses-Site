@@ -8,18 +8,26 @@
 	<style>
 		ul {
 		  list-style-type: none;
+		  display: flex;
 		  margin: 0;
-		  padding: 0;
+		  justify-content: center;
 		  overflow: hidden;
-		  border-style: double solid ridge;
-		  background-color: #FFB242;
+		  border: 10px solid transparent;
+		  padding: 15px;
+		  -webkit-border-image: url(GC_NavigationBorder.png) 16 round; /* Safari 3.1-5 */
+		  -o-border-image: url(GC_NavigationBorder.png) 16 round; /* Opera 11-12.1 */
+		  border-image: url(GC_NavigationBorder.png) 16 round;
+		  border-width: 8px;
+		  background-color: #1455B7;
 		  position: fixed;
 		  top: 0;
-		  width: 100%;
+		  width: 96%;
 		}
 
 		li {
 		  float: left;
+		  list-style-type: none;
+		  display: flex;
 		}
 
 		li a {
@@ -28,10 +36,17 @@
 		  text-align: center;
 		  padding: 14px 16px;
 		  text-decoration: none;
+		  transition: 275ms;
 		}
 
 		li a:hover {
 		  background-color: #111;
+		  transition: 275ms;
+		}
+		
+		li a:hover:not {
+			background-color: #FFB242;
+			transition: 275ms;
 		}
 
 		/* The Link */
@@ -47,47 +62,66 @@
 		}
 
 		.GCLink {
-		  width: 125px;
+		  width: 135px;
 		  height: 64px;
-		  background-color: #FF7B7B
-		  -webkit-transition: width 2s; /* Safari prior 6.1 */
-		  transition: width 2s;
+		  background-color: #FF7B7B;
+		  color: white;
+		  -webkit-transition: 275ms; /* Safari prior 6.1 */
+		  transition: 275ms;
 		}
 		.GCLink:hover {
-			width: 135px;
+			width: 155px;
 			background-color: #FF9999;
-			-webkit-transition: background-color 100ms linear, width 100ms linear;
-			-ms-transition: background-color 100ms linear, width 100ms linear;
-			transition: background-color 100ms linear, width 100ms linear;
+			color: #F2E5E4;
+			-webkit-transition: 275ms;
+			-ms-transition: 275ms;
+			transition: 275ms;
 		}
 		.GCLink:hover:not{
 			width: 125px;
+			color: white;
 			background-color: #FF7B7B;
-			-webkit-transition: background-color 100ms linear, width 50ms linear;
-			-ms-transition: background-color 100ms linear, width 50ms linear;
-			transition: background-color 100ms linear, width 50ms linear;
+			-webkit-transition: 275ms;
+			-ms-transition: 275ms;
+			transition: 275ms;
 		}
 
 		.GCLink:active {
 		  background-color: #FFC1C1;
 		}
+		
+			/* Border for Headlines */
+		.GC_TextBorder {
+		  border: 8px solid transparent;
+		  padding: 15px;
+		  -webkit-border-image: url(GC_HeadingBorder.png) 16 round; /* Safari 3.1-5 */
+		  -o-border-image: url(GC_HeadingBorder.png) 16 round; /* Opera 11-12.1 */
+		  border-image: url(GC_HeadingBorder.png) 16 round;
+		  border-width: 8px;
+		  background-color: #1F59E2;
+		}
+
 	</style>
 
 <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#server">Discord</a></li>
+  <li><a style = "font-family:Comic Sans MS;font-size:26px;font-style:normal;" href="#home"><b>Home</b></a></li>
+  <li><a style = "font-family:Comic Sans MS;font-size:26px;font-style:normal;"href="#about"><b>About</b></a></li>
+  <li><a style = "font-family:Comic Sans MS;font-size:26px;font-style:normal;" href="#server"><b>Discord</b></a></li>
 </ul>
 
-	<h3>
-		<div class="GCTopText">
-			<font color="white"> Info
-		</h3>
+		<div id="home">
+		<br> </br>
+
+		<br>
+			<div class="GCTopText">
+				<font color="white">
+		</br>
+
 
 		<body style="background-image:url('GC_BG.png');">
    <body>
 
-	<div id="home"></div>
+	</div>
 	   <br> </br>
 			<br>
 				<center>
@@ -98,37 +132,46 @@
 
 			<h2>
 				<center>
-					<p style = "font-family:georgia,garamond,serif;font-size:26px;font-style:normal;">
+					<p style = "font-family:Verdana;font-size:26px;font-style:normal;">
 						<font color="red"> <a href="https://static.allfearthesentinel.net/wads/grandclasses-v1a.pk3"target="_blank" class="GCLink"> Download Now! </a>
 							</font>
 				</center>
 			</h2>
 
-			<br> </br> <br> </br> <br> </br> <br> </br> <div id="about"></div> <br> </br>
+			
+			<br> </br> <br> </br>
+			<div id="about"></div> <br> </br>
+			<br> </br> <br> </br>
 
-			<hr>
 				<center>
-					<h1> About </h1>
+					<h1 class="GC_TextBorder" style="font-family:Arial Black;font-style:light;"> About </h1>
 				</center>
-			<hr>
-				<h3> ===== Grand Classes is a MM8BDM Class mod that plans to implement concepts from other users that are possible within Zandronum. </h3>
-				<h3> ======= You can submit your concepts in the Discord server linked below. </h3>
+
+				<p style="font-family:Candara;font-size:26px;font-style:normal;">
+					===== <b> Grand Classes</b> is a <b>MM8BDM Class mod</b> that plans to implement concepts from other users that are possible within <b> Zandronum</b>.
+				</p>
+
+				<p style="font-family:Candara;font-size:26px;font-style:normal;">
+					======= You can <b>submit</b> your <b>concepts</b> in the <b> Discord server</b> linked below.
+				</p>
 
 			<br> </br> <br> </br>
 			
-			<hr>
 				<center>
-					<h1> Discord Server </h1>
+					<h1 class="GC_TextBorder" style="font-family:Arial Black;font-style:light;" > Discord Server </h1>
 				</center>
-			<hr>
 
 				<center>
-					<p style = "font-family:georgia,garamond,serif;font-size:26px;font-style:normal;">
+					<p style = "font-family:Verdana;font-size:26px;font-style:normal;">
 						<font color="red"> <a href="https://discord.gg/B2MvQkH"target="_blank" class="GCLink"> Discord Link </a>
 							</font>
 				</center>
 
-		<br> </br> <div id="server"></div> <br> </br> <br> </br> <br> </br>
+		<br> </br>
+		<br> </br>
+		<div id="server"></div> <br> </br>
+		<br> </br>
+		<br> </br>
 			<div id="disclaimer"></div>
 			<h3>
 				<font color="white">
