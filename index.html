@@ -12,7 +12,8 @@
 		  margin: 0;
 		  justify-content: center;
 		  overflow: hidden;
-		  border: 10px solid transparent;
+		  border: 10px solid;
+		  border-style: solid;
 		  padding: 15px;
 		  -webkit-border-image: url(GC_NavigationBorder.png) 16 round; /* Safari 3.1-5 */
 		  -o-border-image: url(GC_NavigationBorder.png) 16 round; /* Opera 11-12.1 */
@@ -92,7 +93,7 @@
 		
 			/* Border for Headlines */
 		.GC_TextBorder {
-		  border: 8px solid transparent;
+		  border: 8px solid;
 		  padding: 15px;
 		  -webkit-border-image: url(GC_HeadingBorder.png) 16 round; /* Safari 3.1-5 */
 		  -o-border-image: url(GC_HeadingBorder.png) 16 round; /* Opera 11-12.1 */
@@ -101,12 +102,80 @@
 		  background-color: #1F59E2;
 		}
 
+			/* Smooth™ Scroll */
+		html {
+		  scroll-behavior: smooth;
+		}
+
+			/* Navigation Bars */
+    .GCNav1 {
+		width: 80px;
+		height: 20px;
+        display: inline-block;
+		-webkit-transition: 275ms;
+		-ms-transition: 275ms;
+		transition: 275ms;
+    }
+
+    .GCNav1:hover {
+		opacity: 0.5;
+		background-color: #1455B7;
+		width: 80px;
+		height: 20px;
+        display: inline-block;
+		-webkit-transition: 275ms;
+		-ms-transition: 275ms;
+		transition: 275ms;
+    }
+
+    .GCNav2 {
+		width: 98px;
+		height: 20px;
+        display: inline-block;
+		-webkit-transition: 275ms;
+		-ms-transition: 275ms;
+		transition: 275ms;
+    }
+
+    .GCNav2:hover {
+		opacity: 0.5;
+		background-color: #1455B7;
+ 		width: 98px;
+		height: 20px;
+		display: inline-block;
+		-webkit-transition: 275ms;
+		-ms-transition: 275ms;
+		transition: 275ms;
+    }
+
+    .GCNav3 {
+		width: 128px;
+		height: 20px;
+        display: inline-block;
+		-webkit-transition: 275ms;
+		-ms-transition: 275ms;
+		transition: 275ms;
+    }
+
+    .GCNav3:hover {
+		opacity: 0.5;
+		background-color: #1455B7;
+ 		width: 128px;
+		height: 20px;
+		display: inline-block;
+		image-color: blue;
+		-webkit-transition: 275ms;
+		-ms-transition: 275ms;
+		transition: 275ms;
+    }
+
 	</style>
 
 <ul>
-  <li><a style = "font-family:Comic Sans MS;font-size:26px;font-style:normal;" href="#home"><b>Home</b></a></li>
-  <li><a style = "font-family:Comic Sans MS;font-size:26px;font-style:normal;"href="#about"><b>About</b></a></li>
-  <li><a style = "font-family:Comic Sans MS;font-size:26px;font-style:normal;" href="#server"><b>Discord</b></a></li>
+  <li><a class="GCNav1" href="#home"><img src="GCNav1.png" alt="Home" width="80" height="20"></a></li>
+  <li><a class="GCNav2" href="#about"><img src="GCNav2.png" alt="About" width="98" height="20"></a></li>
+  <li><a class="GCNav3" href="#server"><img src="GCNav3.png" alt="Discord Server" width="128" height="20"></a></li>
+
 </ul>
 
 		<div id="home">
@@ -140,11 +209,11 @@
 
 			
 			<br> </br> <br> </br>
-			<div id="about"></div> <br> </br>
-			<br> </br> <br> </br>
+			<div id="about"></div> <br> </br> <br> </br>
+			<br> </br>
 
 				<center>
-					<h1 class="GC_TextBorder" style="font-family:Arial Black;font-style:light;"> About </h1>
+					<h1 class="GC_TextBorder" style="font-family:Arial;font-style:light;"> About </h1>
 				</center>
 
 				<p style="font-family:Candara;font-size:26px;font-style:normal;">
@@ -155,10 +224,11 @@
 					======= You can <b>submit</b> your <b>concepts</b> in the <b> Discord server</b> linked below.
 				</p>
 
+			<div id="server"></div> <br> </br>
 			<br> </br> <br> </br>
 			
 				<center>
-					<h1 class="GC_TextBorder" style="font-family:Arial Black;font-style:light;" > Discord Server </h1>
+					<h1 class="GC_TextBorder" style="font-family:Arial;font-style:light;" > Discord Server </h1>
 				</center>
 
 				<center>
@@ -167,11 +237,18 @@
 							</font>
 				</center>
 
-		<br> </br>
-		<br> </br>
-		<div id="server"></div> <br> </br>
-		<br> </br>
-		<br> </br>
+		<br> </br> <br> </br>
+		<br> </br> <br> </br>
+		<br> </br> <br> </br>
+			<center>
+				<font color="white">
+					<p style = "font-family:Comic Sans MS;font-size:30px;font-style:normal;">
+						More content coming soon...
+						</font>
+			</center>
+		<br> </br> <br> </br> <br> </br>
+		<br> </br> <br> </br>
+
 			<div id="disclaimer"></div>
 			<h3>
 				<font color="white">
